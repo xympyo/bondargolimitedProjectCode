@@ -1,0 +1,62 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+*,
+html,
+head,
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff5ea;
+  color: #212427;
+}
+
+.first-page {
+  background-image: url(./assets/Hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.second-page {
+  background-image: url(./assets/About\ Us.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.third-page {
+  background-image: url(./assets/Product.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.fourth-page {
+  background-image: url(./assets/Contact\ Us.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.footer {
+  background-image: url(./assets/Footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
