@@ -62,12 +62,21 @@ body {
 }
 
 .fade {
-  animation: fade 0.5s both;
+  animation: fade ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
 }
 
 .fade-right {
-  animation: fadeRight linear both;
+  animation: fadeRight ease-out both;
   animation-timeline: view();
+  animation-range: cover 0% cover 100%;
+}
+
+.fade-bottom {
+  animation: fadeRight both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 100%;
 }
 
 @keyframes fade {
@@ -81,9 +90,18 @@ body {
 
 @keyframes fadeRight {
   from {
-    opacity: 0;
+    opacity: 0.75;
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes fadeBottom {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0px);
   }
 }
